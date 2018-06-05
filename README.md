@@ -11,3 +11,12 @@
 1. use docker/whalesay
 1. run in terminal: docker run docker/whalesay cowsay hi all
 1. If done correctly a whale should show up in terminal with a speech bubble that says hi all
+
+##First Docker File
+1. create new directory for file
+1. create file: touch Dockerfile
+1. write the three lines in Dockerfile
+1. run with:  docker run docker-whale
+
+## Running a Web Server with Docker
+1. 
