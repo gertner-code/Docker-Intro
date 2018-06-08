@@ -39,3 +39,16 @@
 1. type after the '>' : > --name mysite nginx
 1. check port: $ docker port mysite
 1. go to the site like in previous example to see your text
+
+## Login to Dockerhub
+1. $ docker login
+1. Enter Username
+1. Enter Password
+
+## Creating an image from an OS, changing it, and saving it
+1. to create:$ docker run -t -i ubuntu
+1. To bash: docker run -t -i ubuntu /bin/bash
+1. To get container id: docker ps -l
+1. commit locally: docker commit -m "added json gem" -a "gertnercoding" \
+   |"container id"| |container id|/|directory name|
+1. to commit to docker hub: docker push |container id|/|directory name|
