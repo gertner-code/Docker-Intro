@@ -46,6 +46,7 @@
 1. Enter Password
 
 ## Creating an image from an OS, changing it, and saving it
+1. go to: https://hub.docker.com/explore/ to search for an OS image (I used ubuntu)
 1. to create:$ docker run -t -i ubuntu
 1. To bash: docker run -t -i ubuntu /bin/bash
 1. To get container id: docker ps -l
