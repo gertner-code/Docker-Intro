@@ -1,6 +1,6 @@
 # Docker-Intro
 ## Installation
-1. Install from https://docs.docker.com/toolbox/toolbox_install_windows/
+1. Install Docker Toolbox from https://docs.docker.com/toolbox/toolbox_install_windows/
 1. Run Docker Quickstart Terminal
 1. Say yes to any permissions windows asks for while it runs
 1. Type  $ docker info   to confirm
@@ -53,3 +53,16 @@
 1. commit locally: docker commit -m "added json gem" -a "gertnercoding" \
    |"container id"| |container id|/|directory name|
 1. to commit to docker hub: docker push |container id|/|directory name|
+
+## Basic Docker Commands
+1. docker help
+1. docker run
+1. docker ps - lists images
+1. docker history -shows history of an image
+1. docker images -shows local images
+1. docker info
+1. docker version
+1. docker rm [CONTAINER ID] 
+1. docker rmi [CONTAINER ID]
+1. docker start [CONTAINER ID]
+1. docker rename [CONTAINER ID]
