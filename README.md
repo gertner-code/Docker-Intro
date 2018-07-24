@@ -62,7 +62,22 @@
 1. docker images -shows local images
 1. docker info
 1. docker version
-1. docker rm [CONTAINER ID] 
+1. docker rm [CONTAINER ID]
 1. docker rmi [CONTAINER ID]
 1. docker start [CONTAINER ID]
 1. docker rename [CONTAINER ID]
+1. docker stop [IMAGE NAME OR CONTAINER ID]
+1. docker pull
+
+## Run WordPress with Docker
+1. docker run --name wordpressmysql -e MYSQL_ROOT_PASSWORD=password -d mysql
+  1. create mysql image for wordpress with password=password
+1. docker ps -l
+  1. check image info
+1. docker run --name mywordpress --link wordpressmysql:mysql -P -d wordpress
+  1. creates wordpress image and links it to the previously created mysql image
+1. docker-machine ip default
+  1. gets the default ip adress that docker will run on
+1. docker ps -l
+  1. get the port of the image
+1. go to the ip and port listed wordpress should be up and ready for setup
